@@ -1,28 +1,30 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Url } from '../../constants';
 
 const Header: React.FC = (): JSX.Element => (
   <header className="page-header">
     <nav className="page-header__nav">
       <div className="page-header__nav-wrap page-header__nav-wrap--close page-header__nav-wrap--no-js">
         <div className="page-header__logo-wrap">
-          <a className="page-header__logo" href="test.com">
+          <Link className="page-header__logo" to={Url.Home}>
             <picture>
               <source media="(min-width:1150px)" srcSet="img/logo-desktop.svg"/>
               <source media="(min-width:768px)" srcSet="img/logo-tablet.svg"/>
               <img className="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип «Mishka»"/>
             </picture>
             <span className="visually-hidden">На главную страницу</span>
-          </a>
+          </Link>
         </div>
         <button className="page-header__toggle" type="button">
           <span className="visually-hidden">Открыть меню</span>
         </button>
-        <a className="page-header__link page-header__link-catalog" href="catalog.html">
+        <Link className="page-header__link page-header__link-catalog" to={Url.Catalog}>
           <span className="page-header__link-text">Каталог товаров</span>
-        </a>
-        <a className="page-header__link page-header__link-form" href="form.html">
+        </Link>
+        <Link className="page-header__link page-header__link-form" to={Url.Order}>
           <span className="page-header__link-text">Вязание на заказ</span>
-        </a>
+        </Link>
         <a className="page-header__link page-header__link-search" href="test.com">
           <svg className="page-header__search-icon" width="18" height="18">
             <use xlinkHref="#icon-search"/>
