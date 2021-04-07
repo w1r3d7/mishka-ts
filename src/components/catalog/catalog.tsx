@@ -5,7 +5,7 @@ const Catalog: React.FC = () => (
     <h1 className="products__title">Каталог товаров</h1>
     <ul className="products__list container">
       <li className="products__item">
-        <a href="#">
+        <a href="item">
           <picture>
             <source media="(min-width:1150px)" type="image/webp" srcSet="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x" />
             <source media="(min-width:768px)" type="image/webp" srcSet="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x" />
@@ -16,7 +16,7 @@ const Catalog: React.FC = () => (
           </picture>
         </a>
         <div className="products__item-wrap">
-          <a href="#">
+          <a href="item">
             <h2 className="products__item-name">Зайчик-попрыгайчик</h2>
           </a>
           <span className="products__item-specification">Рост 30 см, вес 200 г</span>
@@ -32,7 +32,7 @@ const Catalog: React.FC = () => (
         </div>
       </li>
       <li className="products__item">
-        <a href="#">
+        <a href="item">
           <picture>
             <source media="(min-width:1150px)" type="image/webp" srcSet="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x" />
             <source media="(min-width:768px)" type="image/webp" srcSet="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x" />
@@ -43,7 +43,7 @@ const Catalog: React.FC = () => (
           </picture>
         </a>
         <div className="products__item-wrap">
-          <a href="#">
+          <a href="item">
             <h2 className="products__item-name">Корзинка для белья</h2>
           </a>
           <span className="products__item-specification">Диаметр 15 см, высота 10 см</span>
@@ -59,7 +59,7 @@ const Catalog: React.FC = () => (
         </div>
       </li>
       <li className="products__item">
-        <a href="#">
+        <a href="item">
           <picture>
             <source media="(min-width:1150px)" type="image/webp" srcSet="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x" />
             <source media="(min-width:768px)" type="image/webp" srcSet="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x" />
@@ -70,7 +70,7 @@ const Catalog: React.FC = () => (
           </picture>
         </a>
         <div className="products__item-wrap">
-          <a href="#">
+          <a href="item">
             <h2 className="products__item-name">Большая корзинка для игрушек</h2>
           </a>
           <span className="products__item-specification">Диаметр 30 см, высота 30 см</span>
