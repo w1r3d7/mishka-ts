@@ -1,0 +1,137 @@
+.popular-categories {
+  position: relative;
+}
+
+.popular-categories__wrap {
+  display: flex;
+  flex-direction: column;
+  margin-top: -5px;
+}
+
+.popular-categories__item {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  padding: 0 30px;
+  min-height: 103px;
+  background-color: #63d1bb;
+
+  &:hover .popular-categories__icon-interior,
+  &:focus .popular-categories__icon-interior,
+  &:hover .popular-categories__icon-toy,
+  &:focus .popular-categories__icon-toy {
+    opacity: 0.7;
+  }
+
+  &:active .popular-categories__title,
+  &:active .popular-categories__icon-toy,
+  &:active .popular-categories__icon-interior {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #59d5bc;
+  }
+}
+
+.popular-categories__icon-interior {
+  position: absolute;
+  right: 35px;
+  top: 24px;
+  opacity: 0.5;
+}
+
+.popular-categories__icon-toy {
+  position: absolute;
+  right: 27px;
+  top: 21px;
+  opacity: 0.5;
+}
+
+.popular-categories__icon-interior,
+.popular-categories__icon-toy {
+  fill: #149080;
+}
+
+.popular-categories__item--darken {
+  background-color: #56c3b2;
+
+  &:hover,
+  &:focus {
+    background-color: #46c1ae;
+  }
+}
+
+.popular-categories__title {
+  margin: 0;
+  margin-top: 25px;
+  width: 130px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .popular-categories__wrap {
+    margin-top: -119px;
+    flex-direction: row;
+    padding: 0 50px;
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .popular-categories::before {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 22px;
+    bottom: -11px;
+    left: 0;
+    background-image: url('../../assets/img/bg-zigzag-fill.svg');
+    background-size: 768px 22px;
+    background-repeat: repeat-x;
+    background-position-x: 50%;
+    z-index: 2;
+  }
+
+  .popular-categories__icon-interior {
+    top: 30px;
+  }
+
+  .popular-categories__icon-toy {
+    top: 32px;
+    right: 33px;
+  }
+
+  .popular-categories__title {
+    margin-top: 28px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .popular-categories__item {
+    min-height: 104px;
+    padding: 0 36px 15px;
+
+    &:hover,
+    &:focus {
+      margin-top: -5px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .popular-categories__wrap {
+    width: 1050px;
+  }
+
+  .popular-categories::before {
+    height: 34px;
+    bottom: -17px;
+    background-size: 1250px 34px;
+  }
+}
