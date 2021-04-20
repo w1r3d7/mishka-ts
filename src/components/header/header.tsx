@@ -25,25 +25,25 @@ const Header: React.FC = (): JSX.Element => (
         <Link className="page-header__link page-header__link-form" to={Url.Order}>
           <span className="page-header__link-text">Вязание на заказ</span>
         </Link>
-        <a className="page-header__link page-header__link-search" href="test.com">
+        <Link className="page-header__link page-header__link-search" to="#">
           <svg className="page-header__search-icon" width="18" height="18">
             <use xlinkHref="#icon-search"/>
           </svg>
           <span className="page-header__search-text">Поиск по сайту</span>
-        </a>
-        <a className="page-header__link page-header__link-cart" href="test.com">
+        </Link>
+        <Link className="page-header__link page-header__link-cart" to="#">
           <svg className="page-header__cart-icon" width="18" height="18">
             <use xlinkHref="#icon-cart"/>
           </svg>
           <span className="page-header__cart-text">Корзина: пока пуста</span>
-        </a>
+        </Link>
         <div className="page-header__info">
-          <a className="page-header__info-new" href="test.com">
+          <Link className="page-header__info-new" to="#">
             Новые поступления
-          </a>
-          <a className="page-header__info-sale" href="test.com">
+          </Link>
+          <Link className="page-header__info-sale" to="#">
             Распродажа
-          </a>
+          </Link>
           <span className="page-header__info-delivery">Бесплатная доставка по России</span>
         </div>
       </div>

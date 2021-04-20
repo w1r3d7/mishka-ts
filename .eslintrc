@@ -13,6 +13,8 @@
     }
   },
   "rules": {
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/label-has-for":"off",
     "object-curly-spacing": ["warn", "always"],
     "no-unused-vars": [
       "warn",
